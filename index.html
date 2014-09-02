@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>
+MOVIEmeter extension
+</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="angular.min.js"> </script>
+<script src="module1.js">
+</script>
+<script src="factory.js">
+</script>
+<script src="controller.js">
+</script>
+</head>
+<body ng-app="hello">
+<div class= "col-xs-12 navbar  navbar-fixed-top " role='navigation' id="header">
+<div class="col-xs-5">
+<h3 id="text">MOVIEmeter</h3>
+<form action="http://www.imdb.com/find">
+<input type="text" autocomplete="off" value="" name="q" ng-model="searchitem" id="navbar-query" placeholder="Find Movies and more..." />
+<button id="navbar-submit-button" class="primary btn" type="submit" ng-click="search(searchitem)"><div class="magnifyingglass navbarSprite"></div></button>
+</form>
+</div>
+<a href="www.imdb.com"><div class="col-xs-7" id="image1">
+
+</div></a>
+	</div>
+	<div id="try" ng-controller="hello1">
+	<div class="col-xs-12 change_1" ng-repeat="details in customer">
+	<div class="col-xs-3" id="image">
+	<img ng-src={{details.image}}></div>
+	<div class="col-xs-9 change_2" > 
+	<a ng-href="http://www.imdb.com{{details.href}}" target="_blank" style="text-decoration:none">
+	<strong id="text_style"> {{details.title}} {{details.year}} 
+	</strong> 
+	</a>
+	<span id="value" class="{{validate(details.value)}}"> {{details.value}}/10 </span> <br/> <span class="hide_text"> {{details.text}} </span> </div> </div>
+	</div>
+	
+		
+
+</body>
+</html>
