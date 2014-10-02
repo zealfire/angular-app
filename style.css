@@ -1,0 +1,106 @@
+body{
+	min-width: 332px;
+	overflow-x:hidden;
+	overflow: auto; 
+}
+#header{
+background-color: black;
+height:0%;
+}
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+}
+#image1{
+width:106px;
+background:url('logo.jpg');
+background-size: 100% 100%;
+padding:23;
+margin-left: 49%;
+margin-top: 0%;
+}
+ul{
+	list-style:none; 
+}
+#text{
+	color:white;
+	margin-left: 112%;
+}
+#image{
+margin-left: -4%;
+padding-bottom: 0%;
+height: 74px;
+}
+#image img{
+	border:1px solid;
+}
+#text_style{
+	color:black;
+}
+#try .change_1{
+background-color: #ffd700;
+border:1px solid;
+border-color:rgb(215,195,195);
+padding: 3px;
+border-style:dotted;
+}
+#try .change_2{
+	margin-left: -6%;
+}
+.hide_text{
+	display: none;
+	font-family: sans-serif;
+	font-size: 14;
+}
+.change_2:hover .hide_text{
+	display: block;
+	font: bold;
+	color:black;
+}
+#value{
+	border-radius: 21%;
+	border: 2px solid;
+	margin-left: 3%;
+	background-color: black;
+	border-color: black;
+	color:white;
+}
+#indicator{
+	margin-left: 25%;
+	margin-top: 5%;
+	padding: 3%;
+	margin-bottom: 3%;
+}
+#try{
+	margin-top: 4%;
+}
+#navbar-query{
+	width:66%;
+	margin-left: 163%;
+	margin-top: -9%;
+}
+.primary.btn{
+	background: rgba(243,206,0,1);
+	margin-left: 147%;
+	margin-top: -28%;
+	width: 38%;
+	height: 31%;
+}
+.magnifyingglass{
+	width:16px;
+	height:18px;
+	background-position:-43px 0px;
+	margin-left: -16%;
+	margin-top: -14%; 
+}
+.navbarSprite{
+	background-color: transparent;
+	background-image: url('search.png');
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+.validate1{
+	display:none;
+}
+.validate2{
+	display:initial;
+}
